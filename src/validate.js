@@ -21,6 +21,6 @@ exports.Ruta = (ruta) => {
 }
 
 //Función que valida si el archivo existe
-exports.Existe = (ruta) => {
+exports.ExisteRuta = (ruta) => {
     return fs.existsSync(ruta);
 }
