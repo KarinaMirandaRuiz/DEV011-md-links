@@ -11,16 +11,18 @@ exports.Extension = (ruta) => {
 }
 
 // Función que valida si la ruta es absoluta o relativa
-exports.Ruta = (ruta) => {
+exports.transformaRuta = (ruta) => {
     // condicional para encontrar rutas relativas
     if (!/:|\/\//.test(ruta) && /[a-zA-Z/.]/.test(ruta[0])){  /*/* !ruta.includes('//') && ruta[0]==='/' || ruta[0]==='.' || */
-        //console.log(ruta.includes(':'));
-        ruta = path.join(process.cwd(),ruta);
+        //ruta = path.join(process.cwd(),ruta);
+        ruta = path.normalize(path.resolve(__dirname,ruta));
+        ruta = ruta.toString().replace('\\\\','\\');
     }
+    //console.log('-----------/////----',ruta);
     return ruta
 }
 
 //Función que valida si el archivo existe
-exports.ExisteRuta = (ruta) => {
+exports.existeRuta = (ruta) => {
     return fs.existsSync(ruta);
 }
