@@ -2,7 +2,7 @@ const validate = require('../src/validate')
 const path = require('node:path')
 
 //Test para función Extension
-describe('Validación de ruta...', () => {
+describe('Validación de la extensión es tipo Markdown', () => {
   it('Debe retornar false si el archivo no es markdown.', () => {
     //Extenciones validas
     expect(validate.Extension('MockDocumento.md')).toBe(true);
@@ -30,7 +30,7 @@ describe('Transforma la ruta si no es absoluta', () => {
   });  
   it('Ruta relativa', () => {
     console.log(validate.transformaRuta('markdown.md'));
-    expect(validate.transformaRuta('markdown.md')).toBe(path.normalize('C:/Users/gatic/Documents/Bootcamp/Proyecto3/DEV011-md-links/test/markdown.md'));
+    expect(validate.transformaRuta('markdown.md')).toBe(path.normalize('C:/Users/gatic/Documents/Bootcamp/Proyecto3/DEV011-md-links/src/markdown.md'));
   });
 
 });
