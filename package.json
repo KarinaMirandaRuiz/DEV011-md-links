@@ -1,6 +1,27 @@
 {
-  "name": "md-links",
+  "name": "valid-md-links",
   "version": "0.1.0",
+  "keywords": [
+    "markdown",
+    "links",
+    "validator",
+    "validate",
+    "status",
+    "fetch",
+    "markdown-it",
+    "response",
+    "code-status"
+  ],
+  "homepage": "https://github.com/KarinaMirandaRuiz/DEV011-md-links#readme",
+  "author": "Karina Miranda Ruíz <gatica265@gmail.com> (https://github.com/KarinaMirandaRuiz)",
+  "main": "src/index.js",
+  "bin": {
+    "valid-md-links": "src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarinaMirandaRuiz/DEV011-md-links.git"
+  },
   "scripts": {
     "test": "jest --coverage",
     "test:md": "jest --verbose test/md-links.spec.js --coverage",
@@ -19,5 +40,14 @@
   },
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/KarinaMirandaRuiz/DEV011-md-links/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "license": "ISC"
 }
