@@ -6,7 +6,7 @@ En este artículo de la [BBC](https://www.bbc.com/newsadfgafgfg) de 2021, se men
 
 -   La Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) tiene, entre otros, datos disponibles sobre el consumo per cápita de carne.
 
--   Los datos se encuentran en el archivo [meat_consumption.csv](https://experiencia21.tec.mx/courses/352034/files/137949181?module_item) en Canvas y están en kilogramos por año.
+-   Los datos se encuentran en el archivo [meat_consumption.csv](https://es.wikipedia.org/wiki/Trainspotting) en Canvas y están en kilogramos por año.
 
 ✏️ Prueba la hipótesis de que el consumo promedio diario mundial per cápita de carne de res es igual al que artículo de la BBC para los datos del 2019. Supón que el consumo de carne sigue una distribución normal con $\sigma = 24.07$ gramos y el error tipo I se establece en 0.05.
 

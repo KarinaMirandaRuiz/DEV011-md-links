@@ -62,4 +62,22 @@ const validacionLigas2 = (ligas) => {
     return Promise.all(ligasValidadas);
 }
 
-module.exports = { validacionLigas2, leeMD};
+const calculoStats = (ligasMD,validate) =>{
+    const ligasArray = [...ligasMD];
+    const ligas = ligasArray.map(liga=> liga.href);
+    const ligasUnicas = [... new Set(ligas)].length;
+
+    if (!validate){
+        return ('Ligas: ' + ligas.length + '\nLigas unicas: ' + ligasUnicas);
+    } else {  
+        const status = ligasArray.map(liga=> liga.status);
+        const informativos = status.filter(code => code < 200).length
+        const redireccionados = status.filter(code => code > 299 && code < 400).length
+        const rotos = status.filter(code => code > 399 && code < 500).length
+        const errorServidor = status.filter(code => code > 499 && code < 600).length
+        return ('Ligas: ' + ligas.length + '\nLigas unicas: ' + ligasUnicas + '\nInformativos: ' + informativos + '\nRedireccionados: ' + redireccionados + '\nRotos: ' + rotos + '\nError de servidor: ' + errorServidor);
+    }
+}
+
+
+module.exports = { validacionLigas2, leeMD, calculoStats};
