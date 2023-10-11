@@ -9,8 +9,8 @@
     "status",
     "fetch",
     "markdown-it",
-    "response",
-    "code-status"
+    "response http",
+    "status code"
   ],
   "homepage": "https://github.com/KarinaMirandaRuiz/DEV011-md-links#readme",
   "author": "karina-miranda <gatica265@gmail.com> (https://github.com/KarinaMirandaRuiz)",
@@ -23,7 +23,7 @@
     "url": "git+https://github.com/KarinaMirandaRuiz/DEV011-md-links.git"
   },
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --verbose --coverage",
     "test:md": "jest --verbose test/md-links.spec.js --coverage",
     "test:path": "jest --verbose test/validate-path.spec.js --coverage"
   },
