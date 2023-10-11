@@ -1,4 +1,4 @@
-const manipulate = require('../src/index');
+const manipulate = require('../src/cli');
 
 //Test para función mdLinks que lee MD 
 describe('Validación de función mdLinks', () => {
@@ -29,7 +29,7 @@ describe('Validación de función mdLinks', () => {
       ok: 'fail'
     },
     {
-      href: 'https://experiencia21.tec.mx/courses/352034/files/137949181?module_item',
+      href: 'https://es.wikipedia.org/wiki/Trainspotting',
       text: 'meat_consumption.csv',
       file: 'C:\\Users\\gatic\\Documents\\Bootcamp\\Proyecto3\\DEV011-md-links\\src\\morcin.md',
       status: 200,
@@ -58,7 +58,7 @@ describe('Validación de función mdLinks', () => {
       file: 'C:\\Users\\gatic\\Documents\\Bootcamp\\Proyecto3\\DEV011-md-links\\src\\morcin.md',
     },
     {
-      href: 'https://experiencia21.tec.mx/courses/352034/files/137949181?module_item',
+      href: 'https://es.wikipedia.org/wiki/Trainspotting',
       text: 'meat_consumption.csv',
       file: 'C:\\Users\\gatic\\Documents\\Bootcamp\\Proyecto3\\DEV011-md-links\\src\\morcin.md',
     },
