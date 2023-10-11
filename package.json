@@ -13,10 +13,10 @@
     "code-status"
   ],
   "homepage": "https://github.com/KarinaMirandaRuiz/DEV011-md-links#readme",
-  "author": "Karina Miranda Ruíz <gatica265@gmail.com> (https://github.com/KarinaMirandaRuiz)",
-  "main": "src/index.js",
+  "author": "karina-miranda <gatica265@gmail.com> (https://github.com/KarinaMirandaRuiz)",
+  "main": "./src/cli.js",
   "bin": {
-    "valid-md-links": "src/index.js"
+    "mdlinks": "./src/cli.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "jest": "^29.7.0"
   },
-  "description": "",
+  "description": "Esta librería analiza los links dentro de archivos Markdown. Está disponible de dos formas: como un módulo publicado en GitHub, que las usuarias pueden instalar e importar en otros proyectos, y como una interfaz de línea de comandos (CLI) que permite utilizar la librería directamente desde el terminal.",
   "bugs": {
     "url": "https://github.com/KarinaMirandaRuiz/DEV011-md-links/issues"
   },
