@@ -144,7 +144,7 @@ describe("Validación de función mdLinks", () => {
 
 });
 
-
+//Validación de cálculo de estadísticas
 describe('Validación de la función calculoStats', ()=>{
   it("Cálculo de estatísticas sin validación de links", () => {
     return expect(
